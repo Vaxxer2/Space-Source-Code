@@ -1,0 +1,66 @@
+@shift /0
+#Login
+@echo off
+chcp 65001 >nul
+cls
+set /a zomb=%random% %%124
+set /a online=%random% %%33
+if "%online%"== "0" set /a online=1
+title SPACE ║ Discord [ https://discord.gg/QUDs2AxdFt ] ║ Members [ %zomb% ] ║ Online [ %online% ]  User [ %username% ] Owner [Drippy#8425] ║
+:user
+cls
+
+type Banner1.py
+
+
+set /p user=[35m~root@username^>^[33m 
+cls
+type Banner1.py
+set /p pass=[35m~root@password^>^[33m 
+if %user% == root if %pass% == root goto wmain
+if %user% == b goto boot
+goto user
+:wmain
+set /a usernamef=user
+cls
+echo [96m╔═══════╣ [Time] %TIME% [Date] %DATE% 
+echo ╚═╣ [User] %USERNAME%[0m
+type Banner1.py
+echo [94m╔══════════════════════════════════════════════════════════════════╗
+echo                     - Some Commands Are illigal -
+echo               - Im not Responseble For Your Actions -
+echo                     -Type tos for the full T.O.S-
+echo                             - Have Fun -
+echo ╚══════════════════════════════════════════════════════════════════╝[0m
+echo.
+echo [94mPress enter to continue
+set /p user=[35m~root@%usernamef%^>^ [33m
+if %user% == tos start TOS.txt
+if %user% == Tos start TOS.txt
+if %user% == TOS start TOS.txt
+if %user% == T.O.S start TOS.txt
+if %user% == t.o.s start TOS.txt
+#Main
+:main
+cls
+echo [96m╔═══════╣ [Time] %TIME% [Date] %DATE% 
+echo ╚═╣ [User] %USERNAME%[0m
+type Banner1.py
+echo.
+echo [94m       Type 'help' for more details on the commands[0m
+echo.
+set /p user=[35m~root@%usernamef%^>^ [33m 
+if %user% == help goto help
+if %user% == Help goto help
+if %user% == HELP goto help
+if %user% == 1 goto tools
+if %user% == 2 goto webs
+if %user% == 3 goto servers
+if %user% == 4 goto multit
+if %user% == 5 start https://discord.gg/FfMJEV7xjj
+if %user% == 7 goto creits
+if %user% == 8 start C:\Users\%USERNAME%\Desktop\Exp\Files\dsc.txt
+if %user% == 9 goto user
+if %user% == 10 goto exitt
+if %user% == cls goto main
+if %user% == nick goto nick
